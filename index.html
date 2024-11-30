@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trafo Tur ve Tel Kesiti Hesaplama</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Trafo Tur ve Tel Kesiti Hesaplama</h1>
+    
+    <!-- Trafo Tur Hesaplama -->
+    <div class="form-section">
+      <h2>Trafo Tur Hesaplama</h2>
+      <label for="guc">Trafo Gücü (kVA):</label>
+      <input type="number" id="guc" placeholder="Örnek: 10" />
+      <label for="voltaj">Çalışma Voltajı (V):</label>
+      <input type="number" id="voltaj" placeholder="Örnek: 380" />
+      <label for="tur">Tur Sayısı:</label>
+      <input type="number" id="tur" disabled />
+      <button onclick="hesaplaTur()">Hesapla</button>
+    </div>
+
+    <!-- Tel Kesiti Hesaplama -->
+    <div class="form-section">
+      <h2>Tel Kesiti Hesaplama</h2>
+      <label for="akim">Akım (A):</label>
+      <input type="number" id="akim" placeholder="Örnek: 20" />
+      <label for="uzunluk">Kablo Uzunluğu (m):</label>
+      <input type="number" id="uzunluk" placeholder="Örnek: 50" />
+      <label for="telKesiti">Tel Kesiti (mm²):</label>
+      <input type="number" id="telKesiti" disabled />
+      <button onclick="hesaplaKesit()">Hesapla</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
